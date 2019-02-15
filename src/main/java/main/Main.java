@@ -64,8 +64,7 @@ public class Main
     ServicesAndEventsOnWebSocketHandler handler = new ServicesAndEventsOnWebSocketHandler(commonVertx);
     sockJSHandler.socketHandler(handler);
     router.route(route + "/*").handler(sockJSHandler);
-    //createOrGetHttpServerRouter(port).mountSubRouter(configuration.route(), router);
-    
+
     HttpServerOptions httpServerOptions = new HttpServerOptions().setSsl(false);
     
     HttpServer server = commonVertx.createHttpServer(httpServerOptions).requestHandler(router::accept).listen(8080, "127.0.0.1", result -> {
