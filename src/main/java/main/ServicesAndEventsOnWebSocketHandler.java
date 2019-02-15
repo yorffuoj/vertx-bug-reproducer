@@ -33,12 +33,6 @@ public class ServicesAndEventsOnWebSocketHandler implements Handler<SockJSSocket
    *
    * @param vertx
    *          the vertx
-   * @param accessControl
-   *          the access control
-   * @param websocketConfiguration
-   *          the websocket configuration
-   * @param codecs
-   *          the codecs
    */
   public ServicesAndEventsOnWebSocketHandler(Vertx vertx)
   {

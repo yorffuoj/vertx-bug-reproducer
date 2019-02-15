@@ -55,12 +55,6 @@
       <artifactId>vertx-stomp</artifactId>
       <version>${vertx.version}</version>
     </dependency>
-    <dependency>
-      <groupId>io.vertx</groupId>
-      <artifactId>vertx-unit</artifactId>
-      <version>${vertx.unit.version}</version>
-      <scope>test</scope>
-    </dependency>
 
     <!-- Log -->
     <dependency>

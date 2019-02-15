@@ -32,14 +32,8 @@ public class IncomingWebsocketServiceCallHandler implements Handler<Buffer>
    *
    * @param vertx
    *          the vertx
-   * @param accessControl
-   *          the access control
    * @param sockJSSocket
    *          the sock JS socket
-   * @param methodsDescription
-   *          the methods description
-   * @param codecs
-   *          the codecs
    */
   public IncomingWebsocketServiceCallHandler(Vertx vertx, final SockJSSocket sockJSSocket)
   {
